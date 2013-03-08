@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:contentDescription="@string/image_description"
+        android:focusable="false"
+        android:src="@drawable/ic_launcher" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/icon2"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/icon2"
+        android:text="@+id/label2"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/item_increase2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_decrease2"
+        android:layout_alignBottom="@+id/item_decrease2"
+        android:layout_toLeftOf="@+id/item_decrease2"
+        android:text="+" 
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/item_decrease2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/label2"
+        android:text="-" 
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <TextView
+        android:id="@+id/item_quantity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_decrease2"
+        android:layout_alignTop="@+id/label2"
+        android:hint="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/item_price2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_increase2"
+        android:layout_alignBottom="@+id/item_increase2"
+        android:layout_alignLeft="@+id/label2"
+        android:hint="Price"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
